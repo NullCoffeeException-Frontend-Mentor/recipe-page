@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3e5d8;
+    line-height: 1.5;
+}
+
+.wrapper {
+    width: 50vw;
+    min-width: 450px;
+    height: 95%;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div {
+    font-family: 'Outfit', sans-serif;
+}
+
+.text-wrapper {
+    padding: 30px 20px;
+}
+
+.title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 40px;
+}
+
+.description {
+    margin: 20px 0;
+}
+
+.preparation {
+    background: rgba(255, 247, 252, 1);
+    padding: 24px 24px 0 24px;
+    border-radius: 20px;
+}
+
+.preparation-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(112, 51, 76, 1);
+}
+
+.preparation-items {
+    list-style-position: inline;
+    padding: 24px;
+}
+
+.preparation-items li {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.ingredients-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 32px;
+    color: rgba(116, 64, 47, 1);
+    margin: 24px 0;
+}
+
+.ingredients-items {
+    list-style-position: outside;
+    margin: 0 24px;
+}
+
+.ingredients-items li {
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+hr {
+    margin: 24px 0;
+}
+
+.instructions-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 32px;
+    color: rgba(116, 64, 47, 1);
+    margin: 24px 0;
+}
+
+.instructions-items {
+    list-style-position: outside;
+    padding: 0 24px;
+}
+
+.instructions-items li {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nutrition-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 32px;
+    color: rgba(116, 64, 47, 1);
+}
+
+.nutrition-description {
+    margin: 24px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 24px 0;
+}
+
+tr {
+    display: grid;
+    grid-template-areas: 'start th blank td end';
+    grid-template-columns: 1fr 4fr 2fr 4fr 1fr;
+    border-bottom: 1px solid #333;
+    padding: 16px 0;
+}
+
+th {
+    grid-area: th;
+    text-align: start;
+    font-weight: 400;
+}
+
+td {
+    grid-area: td;
+    font-weight: 700;
+    color: rgba(116, 64, 47, 1);
+}
